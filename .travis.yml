@@ -1,1 +1,12 @@
 language: java
+addons:
+  sonarcloud:
+    organization: "jramirezl-github"
+    token:
+      secure: D2/8ptjm9uE8VIbxA88zlamexkWmKX3yP9LGzvttOiG1RwDOQzdy/mJiN+eGpfhlDk92HeTsvcfbaZoAoC5NqqchA7qzbRCU8NLMHnrNTIb7W6E9a9oE/nU4RqGlVo0alXBBxpmCpJAtV5Up3HQYaR2+LFcVk/LAjxxsqjzBG1jXrsQCljcMGjPN5kOxTvO/WOCEvCBVXtUHmluwPzi1GP5Z0k9SojloH9jr7ncnpy/jZRVSQ4/bPOaANVHnWsNB3RAYFY+VVMYN/V/w0Tw/pWfkre38ZK0wxSF/qmi1qtJ5JraUNeiAff+iWjqjALFyXsxZ9U0zhzDbXnDkL6VczuHCtT0wwqdSqraPdDG6P1KUQAL1kziq8UdyV3Y/zzgktP0NuKjd7xKGti0zZ+YW80fuuOSWjizkU94yBFro2SBgXuok8+JNs+/JUO3f/EYZk+fAHTCskWhLpEq1l1CYeC/FcpjUf5E11b4vdP3XuEl23eoEGK7Uqw15BPgmK6nVpE3Xs8RJjfcCsdBG0HNBE7D5p3kW26vA+kGvE2a8aumjhdY5cuaOGTX4eRsUY8W4fwL00Fj821eFuYcQr4BILWiUwF5x0pP5MLaxKi9BcQd0qoTBZO9ZgAvqoWn+s0GK3AMtqmn/nGvtyMRFsPgiQnpkaeEI9BLWbU1sXKlDA7w=
+script:
+  # other script steps might be done before running the actual analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  
+  
+  #
