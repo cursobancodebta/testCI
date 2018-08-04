@@ -15,8 +15,8 @@ public class TestCI {
     public int sum(int n1, int n2){
         return n1 + n2;
     }
-    
-    public int subs(int n1, int n2){
+    //hiiiii
+    int subs(int n1, int n2){
         return n1 - n2;
     }
     
