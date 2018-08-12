@@ -23,5 +23,10 @@ public class TestCI {
     
     public static void main(String[] args) {
             System.out.println("TEST");
+            System.out.println("OEOEOOEE");
+            System.out.println("OEOEOEOEOE");
+            System.out.println("OEOEOEOEOEO");
+            
+            
     }
 }
